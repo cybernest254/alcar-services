@@ -1,0 +1,264 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0073e6;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    height: 70px;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link ul li {
+    display: inline;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link ul li a:hover {
+    color: #ffcc00;
+}
+
+.Home {
+    text-align: center;
+    padding: 120px;
+    color: white;
+    animation: backgroundAnimation 10s infinite;
+    background: linear-gradient(120deg, #3498db, #8e44ad, #e74c3c);
+    background-size: 600% 600%;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#Home {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8e44ad;
+}
+
+@media (min-width: 600px) {
+    .About-Section h3 {
+        font-size: 32px;
+    }
+    .About-Section p {
+        font-size: 20px;
+    }
+}   
+.Services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e3f2fd;
+}
+
+.Services h3 {
+    font-size: 28px;
+    color: #0073e6;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.Services div {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Services div:hover {
+    transform: translateY(-5px);
+}
+
+.Services h4 {
+    font-size: 22px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.Services p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Footer */
+.footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.About {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.About h3 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.About p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .About {
+        padding: 30px 15px;
+    }
+
+    .About h3 {
+        font-size: 24px;
+    }
+
+    .About p {
+        font-size: 14px;
+    }
+}
+.Contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Contact h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.Contact h4 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.Contact a {
+    font-size: 18px;
+    color: #2980b9;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.Contact a:hover {
+    color: #8e44ad;
+}
+
+@media (min-width: 600px) {
+    .Contact h3 {
+        font-size: 32px;
+    }
+    .Contact h4 {
+        font-size: 28px;
+    }
+    .Contact a {
+        font-size: 20px
+    }
+} 
+.footer-bottom {
+    background-color: #222;  /* Dark background for contrast */
+    color: #fff;  /* White text for readability */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.footer-bottom p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f4a261; /* Highlighted text color */
+}
+
+.footer-bottom p:last-child {
+    font-size: 12px;
+    color: #bbb; /* Slightly faded copyright text */
+}      
